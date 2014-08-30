@@ -55,7 +55,7 @@ profileid = ""
 pgpath = ""
 ```
 
-with relevant information. The ``` profileid ``` string should contain the Google Analytics profile id that you're interested in, which you can find at [this page](). The ``` pgpath ``` string variable should contain a path to a course or resource you are interested in, if you are using this for Open.Michigan's OERBit instance. (This is specifically configured to work with an instance of the [OERbit platform](), as of August 2014.) For example, this could be
+with relevant information. The ``` profileid ``` string should contain the Google Analytics profile id that you're interested in, which you can find at [this page](https://developers.google.com/analytics/resources/concepts/gaConceptsAccounts#accountID). The ``` pgpath ``` string variable should contain a path to a course or resource you are interested in, if you are using this for Open.Michigan's OERBit instance. (This is specifically configured to work with an instance of the [OERbit platform](https://github.com/openmichigan/OERbit), as of August 2014.) For example, this could be
 
 ```pgpath = pgpath = "/education/si/si508/fall2008" ```
 
@@ -72,8 +72,8 @@ In addition, a .PDF file will be saved and created each time you run it with a n
 
 ###script: youtube-data-by-channelowner
 
-The Python script youtube-data-by-channeluser.py requires one argumenr: channel owner name, 
-e.g. python youtube-data-by-channelowner.py openmichigan
+The Python script youtube-data-by-channeluser.py requires one argument: channel owner name, 
+e.g. ``` python youtube-data-by-channelowner.py openmichigan ```
 
 
 This script does not require login credentials or an API key because it uses v1 of the YouTube Analytics API. (N.B. The most recent version of the YouTube API is v3, which requires an API key. Likes and dislikes can only be retrieved by v3.)
